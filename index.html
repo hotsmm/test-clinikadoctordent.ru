@@ -10,6 +10,8 @@
 	<meta name="description" content="Несъемное протезирование зубов. Стоматологические клиники «ДОКТОР ДЕНТ» в Центральном и Выборгском районе Санкт-Петербурга. Низкие цены на лечение зубов, протезирование, имплантацию и другие услуги стоматологии." />
 	<link rel="stylesheet" type="text/css" href="style.css">
 	<link rel="icon" type="image/svg+xml" href="favicon.svg">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>  
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
 </head>
 <body>
 	<section class="main">
@@ -37,8 +39,7 @@
                 <div class="consult-form__title">                	
                 	<p>Для того чтобы принять участие в акции позвоните нам:<br>
                 	(812) 123-45-67 или оставьте ваш телефон:</p>
-                </div>
-                
+                </div>                
                 <div class="consult-form__inputs">                	
                     <div class="consult-form__input" style="margin-bottom: 16px;">                
                         <input type="text" name="name" placeholder="Имя Фамилия" required />
@@ -47,14 +48,87 @@
                         <input type="tel" name="tel" placeholder="+7 (...) -...-.." required />
                         <!--input type="phone" name="phone" pattern="^\+7[1-9]{10}$" required-->
                     </div>
-                </div>
-                
+                </div>                
                 <div>
                     <button class="consult-form__submit" type="submit">Отправить заявку</button>
                 </div>
             </form>       
-    </div>		
+        </div>		
 	</section>
 
+    <section class="advantages">
+        <div class="advantages-opalescence">
+            <h3>Преимущества Opalescence:</h3>
+            <div class="opalescence">
+                <p><img src="img/check.svg">Безопасность.</p>
+            </div>
+            <div class="opalescence">
+                <p><img src="img/check.svg">Нейтральный рН геля не изменяет структуру зуба.</p>
+            </div>
+            <div class="opalescence">
+                <p><img src="img/check.svg">Вода в составе геля не допускает обезвоживания зуба.</p>
+            </div>
+            <div class="opalescence">
+                <p><img src="img/check.svg">Защита десен</p>
+            </div>
+            <div class="opalescence">
+                <p><img src="img/check.svg">Содержание фторидов уменьшает риск возникновения кариеса.</p>
+            </div>
+            <div class="opalescence">
+                <p><img src="img/check.svg">Быстрый и стойкий результат.</p>
+            </div>
+            <h3>Наши специалисты</h3>
+            <div class="osnovaniye">
+                <div class="slider">
+                    <div class="moving_slayda">
+                        <img src="img/doctor-1.jpeg" alt="Стоматолог-терапевт">
+                        <p>Иванов Иван Иванович</p>
+                    </div>
+                    <div class="moving_slayda">
+                        <img src="img/doctor-3.jpg" alt="Стоматолог-ортодонт">
+                        <p>Иванов Федор Иванович</p>
+                    </div>
+                    <div class="moving_slayda">
+                        <img src="img/doctor-2.jpg" alt="Стоматолог-ортопед">
+                        <p>Иванов Павел Иванович</p>
+                    </div>
+                    <div class="moving_slayda">
+                        <img src="img/doctor-4.jpg" alt="Стоматолог-хирург">
+                        <p>Иванова Ольга Ивановна</p>
+                    </div>
+                </div>
+            </div>
+            <div class="advantages-include"></div>
+            <div class="advantages-our"></div>
+        </div>        
+    </section>
+    
+    <script type="text/javascript">
+        $(document).ready(function() {
+  $(".slider").slick({
+  arrows: true,
+  dots: false,
+  slidesToShow: 2,
+  autoplay: true,
+  speed: 900,
+  autoplaySpeed: 700,
+  responsive: [
+  {
+  breakpoint: 768,
+  settings: {
+  slidesToShow: 2
+  }
+  },
+  {
+  breakpoint: 550,
+  settings: {
+  slidesToShow: 1
+  }
+  }
+  ]
+  });
+});
+
+    </script>
 </body>
 </html>
