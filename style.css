@@ -280,7 +280,7 @@ p {
   display: flex;
   justify-content: center;
   align-items: center;
-  max-width: 499px;
+  max-width: 475px;
   width: 100%
 }
 
@@ -351,3 +351,4 @@ p {
   height: 100%;
 }
 /* /slider */
+
