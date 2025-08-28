@@ -309,6 +309,7 @@ p, a {
 .advantages-container-img {
   display: flex;
   margin-bottom: 24px;
+  align-items: center;	
 }
 
 .advantages-container-img p {
@@ -337,7 +338,7 @@ p, a {
     }
 
     .consult-form {
-        margin: 0 auto;
+    	margin: 0 auto;
     }
 
     .main {
@@ -414,3 +415,4 @@ p, a {
         width: 100%;
     }
 } 
+
